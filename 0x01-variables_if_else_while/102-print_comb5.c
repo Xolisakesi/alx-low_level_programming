@@ -17,7 +17,7 @@ printf("%02d %02d", i, j);
 }
 if (i != 98 || j != 99)
 {
-putchar(',');
+printf(", ");
 }
 }
 }
