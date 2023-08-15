@@ -8,9 +8,10 @@ int main(void)
 {
 	char n[] = "_putchar";
 
-	for (int i = 0; n[i] != '\0'; i++)
+	for (int i = 0; i  <= 8; i++)
 	{
 		_putchar(n[i]);
 	}
+	_putchar('\n');
 	return (0);
 }
