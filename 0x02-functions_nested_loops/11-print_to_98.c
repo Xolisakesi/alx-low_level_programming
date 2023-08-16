@@ -3,7 +3,7 @@
  * print_to_98 - prints all natural numbers1
  * from n - 98
  * @n: parameter passed to function
- * Return: Always 0 (sucess)
+ * Return: Always void (sucess)
  **/
 void print_to_98(int n)
 {
@@ -24,7 +24,7 @@ void print_to_98(int n)
 	}
 	else
 	{
-		for (i = j; i >= 98; i++)
+		for (i = j; i >= 98; i--)
 		{
 			if (i != 98)
 			{
@@ -34,5 +34,4 @@ void print_to_98(int n)
 			}
 		}
 	}
-	return (0);
 }
