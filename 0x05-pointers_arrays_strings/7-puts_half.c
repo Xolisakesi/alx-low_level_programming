@@ -12,7 +12,7 @@ for (i = 0; str[i] != '\0'; i++)
 {
 len++;
 }
-for (j = (len - 1) / 2 ; j <= len - 1; j++)
+for (j = (len - 1) / 2 ; j < len ; j++)
 {
 if ((len - 1) % 2 == 0)
 {
