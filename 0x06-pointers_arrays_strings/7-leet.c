@@ -6,31 +6,18 @@
  */
 char *leet(char *s)
 {
-static int i;
-char c;
+static int i, j;
+char str_1[] = "aAeEoOtTlL";
+char str_2[] = "4433007711";
 
-for (i = 0; s[i] != '\0'; i++)
+for (; s[i] != '\0'; i++)
 {
-c = s[i];
-if (c == 'a' || c == 'A')
+for (j = 0; j < 10; j++)
 {
-s[i] = '4';
+if (s[i] == str_1[j])
+{
+s[i] = str_2[j];
 }
-else if (c == 'e' || c == 'E')
-{
-s[i] = '3';
-}
-else if (c == 'o' || c == 'O')
-{
-s[i] = '0';
-}
-else if (c == 't' || c == 'T')
-{
-s[i] = '7';
-}
-else if (c == 'l' || c == 'L')
-{
-s[i] = '1';
 }
 }
 return (s);
