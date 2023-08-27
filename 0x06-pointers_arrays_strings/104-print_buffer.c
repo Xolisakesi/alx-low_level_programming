@@ -17,6 +17,7 @@ while (size > k)
 {
 j = size - k < 10 ? size - k : 10;
 printf("%08x", k);
+printf(":");
 for (i = 0; i < 10; i++)
 {
 if (i < j)
