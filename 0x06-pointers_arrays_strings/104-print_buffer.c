@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <ctype.h>
 /**
  * print_buffer - function that prints a buffer
  * @b: pointer to data
@@ -9,47 +8,36 @@
  */
 void print_buffer(char *b, int size)
 {
-static int i, j;
+static int j, k, i, c;
 if (size <= 0)
 {
-printf("\n");
 return;
 }
-for (; i < size; i += 10)
+while (size > k)
 {
-printf("%08x ", i);
-for (j = i; j < i + 10; j += 2)
+j = size - k < 10 ? size - k : 10;
+printf("%08x", k);
+for (i = 0; i < 10; i++)
 {
-if (j < size)
-{
-printf("%02x", (unsigned char)b[j]);
-if (j + 1 < size)
-{
-printf("%02x", (unsigned char)b[j + 1]);
-}
+if (i < j)
+printf("%02x", *(b + k + i));
 else
+printf(" ");
+if (i % 2)
 {
-printf("  ");
-}
 printf(" ");
 }
-else
-{
-printf("      ");
 }
-}
-printf(" ");
-for (j = i; j < i + 10 && j < size; j++)
+for (i = 0; i < j; i++)
 {
-if (isprint(b[j]))
+c = *(b + k + i);
+if (c < 32 || c > 132)
 {
-printf("%c", b[j]);
+c = '.';
 }
-else
-{
-printf(".");
-}
+printf("%c", c);
 }
 printf("\n");
+k += 10;
 }
 }
