@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _strchr - function that locates a
  * character in a string.
@@ -16,6 +17,6 @@ return ((char *)s);
 }
 s++;
 }
-return (0);
+return (NULL);
 }
 
