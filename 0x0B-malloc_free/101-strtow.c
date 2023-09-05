@@ -11,7 +11,7 @@ char **strtow(char *str)
 char **matrix;
 static int words, i, start, word_index, word_len, j;
 
-if (str == NULL)
+if (str == NULL || *str == '\0')
 return (NULL);
 for (; str[i] != '\0'; i++)
 {
