@@ -26,6 +26,8 @@ len2++;
 s3 = malloc(len1 + len2 + 1);
 if (!s3)
 return (NULL);
+i = 0;
+j = 0;
 if (s1)
 {
 while (i < len1)
@@ -36,7 +38,7 @@ i++;
 }
 if (s2)
 {
-while (i < len1 + len2)
+while (i < (len1 + len2))
 {
 s3[i] = s2[j];
 i++;
