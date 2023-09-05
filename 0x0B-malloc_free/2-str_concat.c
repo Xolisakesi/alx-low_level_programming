@@ -12,7 +12,7 @@ static int len1, len2, i, j;
 char *s3;
 
 if (!s1 && !s2)
-return (NULL);
+s3 = "";
 if (s1)
 {
 while (s1[len1])
