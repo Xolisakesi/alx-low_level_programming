@@ -1,4 +1,4 @@
-#include <unistd.h> // Include the necessary header for write function
+#include <unistd.h> 
 
 /**
  * _putchar - writes a character to stdout
