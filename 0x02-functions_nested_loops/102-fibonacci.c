@@ -9,8 +9,9 @@
 int main(void)
 {
 long int next, a = 1, b = 2;
+int i = 0;
 
-for (int i = 1; i <= 50; ++i)
+for (; i <= 50; ++i)
 {
 printf("%ld%s", a, (i == 50) ? "\n" : ", ");
 next = a + b;
