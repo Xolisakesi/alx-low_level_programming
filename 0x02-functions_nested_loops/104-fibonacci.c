@@ -10,7 +10,7 @@ unsigned long j = 1, k = 2;
 int i = 0;
 
 printf("%lu", j);
-for (; i < 98; ++i)
+for (; i < 97; ++i)
 {
 printf(", %lu", k);
 k += j;
