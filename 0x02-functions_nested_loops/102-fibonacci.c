@@ -11,9 +11,9 @@ int main(void)
 long int next, a = 1, b = 2;
 int i = 0;
 
-for (; i <= 50; ++i)
+for (; i < 50; ++i)
 {
-printf("%ld%s", a, (i == 50) ? "\n" : ", ");
+printf("%ld%s", a, (i == 49) ? "\n" : ", ");
 next = a + b;
 a = b;
 b = next;
