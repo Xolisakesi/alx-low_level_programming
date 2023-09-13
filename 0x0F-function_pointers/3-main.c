@@ -10,12 +10,17 @@
 
 int main(int argc, char *argv[])
 {
-int arg1, arg2, result;
-
-if (argc != 4 || atoi(argv[2]) != 1)
+int op, arg1, arg2, result;
+op = atoi(argv[2]);
+if (argc != 4)
 {
 puts("Error");
 return (98);
+}
+if (op != 1 || (op != '+' && op != '-' && op != '*' && op != '/' && op != '%'))
+{
+puts("Error");
+return (99);
 }
 arg1 = atoi(argv[1]);
 arg2 = atoi(argv[3]);
