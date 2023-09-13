@@ -11,7 +11,8 @@
 int main(int argc, char *argv[])
 {
 int arg1, arg2, result;
-if (argc != 4)
+
+if (argc != 4 || atoi(argv[2]) != 1)
 {
 puts("Error");
 return (98);
