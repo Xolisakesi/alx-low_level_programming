@@ -9,7 +9,4 @@ void array_iterator(int *array, size_t size, void (*action)(int));
 int int_index(int *array, int size, int (*cmp)(int));
 int _putchar(char c);
 
-/* Define a typedef for a function pointer type */
-typedef int (*Operation)(int, int);
-
-#endif /* FUNCTION_POINTERS_H */
+#endif 
