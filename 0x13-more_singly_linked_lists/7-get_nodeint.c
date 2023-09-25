@@ -13,14 +13,10 @@ unsigned int n = 0;
 if (head == NULL)
 return (NULL);
 
-while (head != NULL)
+while (head && n < index)
 {
 head = head->next;
 n++;
-if (n == index)
-{
+}
 return (head);
-}
-}
-return (0);
 }
