@@ -25,7 +25,7 @@ tmp->next = *head;
 *head = tmp;
 return (tmp);
 }
-while (itr && i < idx)
+while (itr && i < idx - 1)
 {
 itr = itr->next;
 i++;
