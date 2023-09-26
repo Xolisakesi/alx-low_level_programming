@@ -34,5 +34,6 @@ count++;
 break;
 }
 }
+*h = NULL;
 return (count);
 }
