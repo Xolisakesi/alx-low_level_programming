@@ -19,7 +19,7 @@ return (count);
 
 while (*h)
 {
-if (*h < (*h)->next)
+if (*h > (*h)->next)
 {
 temp = (*h)->next;
 free(*h);
