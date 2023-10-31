@@ -49,7 +49,7 @@ char *buffer;
 
 if (argc != 3)
 {
-dprintf(STDERR_FILENO, "Usage: cp source_file destination_file\n");
+dprintf(STDERR_FILENO, "Usage: file_from file_to\n");
 exit(97);
 }
 
