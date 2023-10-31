@@ -31,7 +31,7 @@ int status;
 status = close(fd);
 if (status == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't close file descriptor %d\n", fd);
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 exit(100);
 }
 }
